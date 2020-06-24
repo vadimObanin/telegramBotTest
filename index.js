@@ -12,6 +12,6 @@ bot.on("message", (msg) => {
   console.log(msg);
   bot.sendMessage(
     msg.chat.id,
-    "Привет, я пока мало умею, но я написан ручками на node.js"
+    "Привет " + msg.from.first_name + " " + msg.from.last_name
   );
 });
